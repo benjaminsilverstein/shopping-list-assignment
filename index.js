@@ -19,11 +19,11 @@ $('#js-shopping-list-form').submit(event => {
     
 })
 
-$('.shopping-item-delete').on('click', event => {
+$('.shopping-list').on('click', '.shopping-item-delete', event => {
     $(event.currentTarget).closest('li').remove();
 })
 
-$('.shopping-item-toggle').on('click', event => {
+$('.shopping-list').on('click', '.shopping-item-toggle', event => {
     $(event.currentTarget).closest('li').children('.shopping-item').toggleClass('shopping-item__checked')
 })
 
